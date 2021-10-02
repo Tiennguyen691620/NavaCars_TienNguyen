@@ -379,6 +379,7 @@ header {
 .nava-sevice .service-content p {
 	font-size: 3rem;
 	font-weight: 200;
+	text-transform: uppercase;
 }
 
 .nava-sevice .service-button a {
@@ -406,6 +407,7 @@ header {
 
 .feature-cars .cars-tittle h3 {
 	font-size: 30px;
+	font-weight: 400;
 }
 
 .feature-cars .cars-tittle p {
