@@ -90,14 +90,67 @@
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+	header {
+		background: #000;
+		height: auto;
+	}
+
+	.header .mobile-btn-bar {
+		display: block;
+	}
+
 	.header .container-fluid {
 		display: block;
 		text-align: center;
+		padding: 20px 0px;
 	}
 
-	.header .container-fluid .nav-header {
-		display: none;
+	.header .nav-header li:nth-child(n + 2) {
+		margin: 0px;
 	}
+
+	.header .nav-header li:last-of-type a {
+		border: none;
+		padding: 0px;
+	}
+	/*  */
+
+	.header .nav-header ul {
+		position: fixed;
+		width: 100%;
+		/* min-height: 60vh; */
+		background: #202020;
+		top: 73px;
+		left: -100%;
+		padding: 0;
+		text-align: center;
+		display: block;
+		transition: all 0.5s linear;
+		display: block !important;
+	}
+
+	.header .nav-header ul.show {
+		left: 0;
+	}
+
+	.header .nav-header ul li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		height: 76px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.header .nav-header ul li:first-child {
+		border-top: 1px solid #fff;
+	}
+
+	.header .nav-header ul li:last-child {
+		border: unset;
+	}
+
+	/*  */
 
 	.nava-banner {
 		min-height: unset;
@@ -207,6 +260,10 @@
 		width: 140px;
 	}
 
+	.header .nav-header ul {
+		top: 68px;
+	}
+
 	.nava-banner {
 		min-height: unset;
 		height: 50rem;
@@ -289,6 +346,10 @@
 		padding: 15px 0px;
 	}
 
+	.header .nav-header ul {
+		top: 57px;
+	}
+
 	.nava-banner {
 		height: 40rem;
 	}
@@ -298,10 +359,10 @@
 	}
 
 	.nava-banner .container-fluid .container .banner-content h1 {
-		font-size: 40px;
+		font-size: 7vw;
 	}
 	.nava-banner .container-fluid .container .banner-content p {
-		font-size: 20px;
+		font-size: 3.5vw;
 	}
 
 	.nava-banner .container-fluid .container .input-group {
@@ -321,10 +382,15 @@
 	.nava-banner .banner-figures {
 		flex-wrap: wrap;
 		bottom: -170px;
+		padding: 20px 0px;
 	}
 
 	.nava-banner .figures-item {
 		width: calc(100% / 2);
+	}
+
+	.nava-banner .figures-item:nth-child(n + 3) {
+		padding-top: 5px;
 	}
 
 	.nava-banner .figures-item:nth-child(2) {

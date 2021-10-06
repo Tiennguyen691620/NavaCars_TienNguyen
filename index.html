@@ -18,10 +18,10 @@
 	</head>
 	<body>
 		<header>
-			<section class="header">
-				<!-- <div class="mobile-btn-bar">
-					<div class="menu-icon ti-menu"></div>
-				</div> -->
+			<section id="header" class="header">
+				<div class="mobile-btn-bar">
+					<div class="menu-icon"></div>
+				</div>
 				<div class="container-fluid">
 					<div class="logo">
 						<a href="http://" target="_blank" rel="123">
@@ -411,6 +411,21 @@
 				</div>
 			</section>
 		</footer>
+
+		<!-- <script>
+			var header = document.getElementById("header");
+			var mobileMenu = document.getElementById("mobile-menu");
+			var headerHeight = header.clientHeight;
+
+			mobileMenu.onclick = function () {
+				var isClose = header.clientHeight === headerHeight;
+				if (isClose) {
+					header.style.height = "auto";
+				} else {
+					header.style.height = null;
+				}
+			};
+		</script> -->
 
 		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 		<script src="./bootstrap-5.0.2-dist/js/jquery.min.js"></script>
